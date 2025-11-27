@@ -4,7 +4,6 @@ from level import Level
 from game_data import level_0
 
 # pygame setup
-
 pygame.init()
 screen = pygame.display.set_mode((screen_width,screen_height))
 clock = pygame.time.Clock()
@@ -16,8 +15,8 @@ while True:
             pygame.quit()
             sys.exit()
 
-    screen.fill('black')
+    screen.fill('grey')
     level.run()
 
     pygame.display.update()
-    clock.tick(120)
+    clock.tick(60)
